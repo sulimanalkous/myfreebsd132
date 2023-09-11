@@ -1,0 +1,20 @@
+URxvt*transparent: true
+URxvt*shading: 43
+URxvt*scrollBar: false
+URxvt*saveLines: 12000
+URxvt*foreground: Gray
+URxvt*background: Blue
+URxvt.font:xft:Monospace:pixelsize=12
+URxvt.boldfont:xft:Monospace-Bold:pixelsize=12
+
+! Disable ISO 14755 unicode input so we can use Ctrl-Shift bindings 
+URxvt.iso14755:        false 
+URxvt.iso14755_52:     false 
+
+! Disable Ctrl-Alt-c & Ctrl-Alt-v bindings (optional) 
+URxvt.keysym.C-M-c:    builtin-string: 
+URxvt.keysym.C-M-v:    builtin-string: 
+
+! Bind Ctrl-Shift-c & Ctrl-Shift-v to copy and paste 
+URxvt.keysym.C-S-0x43: eval:selection_to_clipboard 
+URxvt.keysym.C-S-0x56: eval:paste_clipboard
