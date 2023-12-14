@@ -1,35 +1,37 @@
+#!/bin/sh
+
+# set proper locale(1) wih LC_ALL
+export LC_ALL=en_US.UTF-8
+
 ENV=$HOME/.shrc;
 export ENV
+
+
+
+#xrandr --output DisplayPort-0 --primary --mode 2560x1440 --pos 1920x0 --rotate normal --output HDMI-A-0 --mode 1920x1080 --pos 0x0 --rotate normal
+ ~/.screenlayout/fix-monitor.sh &
+
+# set layout for EN, AR
+setxkbmap -layout us,ara -option grp:lalt_lshift_toggle
 
 xscreensaver -no-splash &
 xdg-user-dirs-update &
 
-
-#xrandr --output DP-1 --primary --mode 2560x1440 --pos 1920x0 --rotate normal --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal &
-/home/suliman/.screenlayout/fix-monitor.sh &
-/home/suliman/scripts/randombg.sh   &
-
-# DSB AUTOMOUNTER
-# refrance site: https://vermaden.wordpress.com/2018/10/11/freebsd-desktop-part-17-automount-removable-media/
-dsbmc-cli -a &
-dsbmc &
-
-#exec startxfce4
-
-#urxvt &
-#xfe &
 picom ~/.config/picom.conf &
 
-picom -b -f
+picom -b -f &
+
+conky -d &
 
 redshift &
 
-/usr/local/bin/slstatus &
+clipmenud &
+
+xrdb -load $HOME/.config/X11/Xresources
+#/usr/local/bin/slstatus &
 #exec ssh-agent /usr/local/bin/dwm
 
-
-fluxbox exec
+#exec startfluxbox
+xsetroot -solid black &
 #openbox
-#exec i3
-
-#exec /home/suliman/devs/rustProjects/my_dwm/target/release/my_dwm 
+ck-launch-session dbus-launch --exit-with-session openbox
