@@ -15,3 +15,10 @@
 # If you want to use XFCE config tools...
 #
 #xfce-mcs-manager &
+
+~/.screenlayout/fix-monitor-nosettings.sh &
+
+redshift &
+
+picom ~/.config/picom.conf &
+picom -b -f &
