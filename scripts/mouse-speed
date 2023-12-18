@@ -1,0 +1,5 @@
+#!/bin/bash
+speed=$1
+id=12
+CTM=152
+xinput --set-prop $id $CTM  $speed 0 0 0 $speed 0 0 0 1

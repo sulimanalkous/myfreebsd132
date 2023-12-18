@@ -1,0 +1,28 @@
+Device 'Logitech G502 HERO Gaming Mouse':
+	Device Enabled (150):	1
+	Coordinate Transformation Matrix (152):	1.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 1.000000
+	libinput Natural Scrolling Enabled (285):	0
+	libinput Natural Scrolling Enabled Default (286):	0
+	libinput Scroll Methods Available (287):	0, 0, 1
+	libinput Scroll Method Enabled (288):	0, 0, 0
+	libinput Scroll Method Enabled Default (289):	0, 0, 0
+	libinput Button Scrolling Button (290):	2
+	libinput Button Scrolling Button Default (291):	2
+	libinput Button Scrolling Button Lock Enabled (292):	0
+	libinput Button Scrolling Button Lock Enabled Default (293):	0
+	libinput Middle Emulation Enabled (294):	0
+	libinput Middle Emulation Enabled Default (295):	0
+	libinput Accel Speed (296):	0.000000
+	libinput Accel Speed Default (297):	0.000000
+	libinput Accel Profiles Available (298):	1, 1
+	libinput Accel Profile Enabled (299):	1, 0
+	libinput Accel Profile Enabled Default (300):	1, 0
+	libinput Left Handed Enabled (301):	0
+	libinput Left Handed Enabled Default (302):	0
+	libinput Send Events Modes Available (270):	1, 0
+	libinput Send Events Mode Enabled (271):	0, 0
+	libinput Send Events Mode Enabled Default (272):	0, 0
+	Device Node (273):	"/dev/input/event2"
+	Device Product ID (274):	1133, 49291
+	libinput Drag Lock Buttons (303):	<no items>
+	libinput Horizontal Scroll Enabled (304):	1
