@@ -338,6 +338,13 @@
         </action>
     </keybind>
     <!-- Mod4 + z to change Wallpaper -->
+        <!-- Mod4 + Print to take screenshot -->
+    <keybind key="W-Print">
+        <action name="Execute">
+            <command>scrot -z -o -s '%y%m%d%H%M%S.png' -e 'mv $f /home/suliman/Pictures/screenShots/'</command>
+        </action>
+    </keybind>
+    <!-- Mod4 + z to change Wallpaper -->
     <!-- Pulseaudio control -->
     <keybind key="XF86AudioRaiseVolume">
         <action name="Execute">
